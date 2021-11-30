@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Colonizing Mars</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto:ital,wght@0,500;1,100;1,900&display=swap" rel="stylesheet">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+	/*****font-family: 'Open Sans', sans-serif;****/
+	/*****font-family: 'Source Sans Pro', sans-serif;*****/
+	/******font-family: 'Roboto', sans-serif;******/
+
+	body{
+		background-image: url("space.jpg");
+		font-family: 'Roboto', sans-serif;
+		
+		margin: 0px;
+		padding: 0px;
+			
+	}
+
+	
+	
+	
+	#item1{
+background-image: linear-gradient(to bottom,#EE00F2,#9B10EB,#891DDB,#6F0FDB,#8705F2);
+		text-align: center;
+		margin: 0px;
+	}
+	#item2{
+		background-image: linear-gradient(to top right,#6005F2,#5E9BF2,#6F0FDB,#891DDB,#8705F2);
+		margin: auto;
+		max-width: 350px;
+		padding:86px;
+		color:#FFFFFF;
+	text-align: center;
+		
+		
+	}
+	#item3{
+		margin: 0px;
+		text-align: center;
+		
+		background-image: linear-gradient(to top,#6005F2,#5E9BF2,#6F0FDB,#891DDB,#8705F2,#9B10EB);
+	}
+	
+	
+	
+	label{
+	
+
+
+	}
+	
+	
+	.flex-container div{
+		
+		 
+		padding:1px;
+		color: white; 
+		
+	}
+	
+	
+	
+
+	
+</style>	
+</head>
+
+<body>
+	
+	<div class="flex-container">
+		<div id="item1">
+	<h1>Colonizing Mars</h1>
+	
+	<p>fill out the following form for a fun Madlibs experience!</p>
+			<p>(Hint: Nouns-person,place or thing)(Adjective-Naming an attribute of a noun)</p>
+			<p>(Adverb-word or phrase that modifies or qualifies an adjective)</p>
+	<h2>Have Fun!</h2>
+			
+	</div>
+	
+	</div>
+	
+	
+	<form action="javascript:write();">
+	
+		
+		<div class="flex-container">
+		<div id="item2">
+		
+	<p>    <!-----Text lables here-----> 
+		<label for="adj">Adjective</label>
+		<input type="text" id="adj" name="adj" required autofocus>
+		
+		<br><lable for="adv">Adverb</lable>
+		<input type="text" id="adv" name="adv">
+		              
+		<br><label for="nou">Noun</label>
+		<input type="text" id="nou" name="nou">
+		
+		<br><label for="adj1">Adjective</label>
+		<input type="text" id="adj1" name="adj1">
+		                 
+		<br><label for="anml">Animal</label>
+		<input type="text" id="anml" name="anml">
+		
+		<br><label for="nou1">Noun</label>
+		<input type="text" id="nou1" name="nou1">
+		                  
+		<br><label for="ficrace">Fictional Race</label>
+		<input type="text" id="ficrace" name="fitrace">
+		                 
+		<br><label for="hday">Holiday</label>
+		<input type="text" id="hday" name="hday">
+		                   
+		<br><label for="vrb">Verb</label>
+		<input type="text" id="vrb" name="vrb">
+		
+		<br><label for="nou2">Noun</label>
+		<input type="text" id="nou2" name="nou2">
+		                  
+		<br><label for="nou3">Nouns</label>
+		<input type="text" id="nou3" name="nou3">
+		
+		<br><label for="nou4">Noun</label>
+		<input type="text" id="nou4" name="nou4">
+		                   
+		<br><label for="plc">Place</label>
+		<input type="text" id="plc" name="plc">
+		
+		<br><label for="vrb1">Verb</label>
+		<input type="text" id="vrb1" name="vrb1">
+		                  
+		<br><label for="pernam">Person’s name</label>
+		<input type="text" id="pernam" name="pernam">
+		
+		<br><label for="nou5">Noun</label>
+		<input type="text" id="nou5" name="nou5">
+		                   
+		<br><label for="vrb2">Verb</label>
+		<input type="text" id="vrb2" name="vrb2">
+		
+		<br><lable for="adv1">Adverb</lable>
+		<input type="text" id="adv1" name="adv1">
+		                   
+		<br><lable for="adj2">Adjective</lable>
+		<input type="text" id="adj2" name="adj2">
+		                   
+		<br><lable for="ficp">Fictional Planet</lable>
+		<input type="text" id="ficp" name="ficp">
+		                   
+		<br><lable for="nou6">Noun</lable>
+		<input type="text" id="nou6" name="nou6">
+		                   
+		<br><lable for="adj3">Adjective</lable>
+		<input type="text" id="adj3" name="adj3">
+		
+		<br><lable for="vrb3">Verb</lable>
+		<input type="text" id="vrb3" name="vrb3">
+		                   
+		<br><lable for="vrb4">Verb</lable>
+		<input type="text" id="vrb4" name="vrb4">
+		
+		</p>
+		
+		<br>
+		
+	<label for="vehicle">Choose a Vehicle name:</label>
+		<select id="vehicle" name="vehicle">
+			<optgroup label="Vehicle list">
+		      <option value="Volvo">Volvo</option>
+		      <option value="Rocket">Rocket</option>
+			  <option value="Yacht">Yacht</option>
+			  <option value="Ford">Ford</option>	
+		</optgroup>
+		</select>
+		
+		
+		
+	
+	<p><input type="submit" value="Submit"></p>
+	
+	</div>	
+		</div>
+	
+	</form>
+	<div class="flex-container">
+		<div id="item3">
+	<div id="output"></div>
+	
+	<script>
+	function write(){
+	//This is where we create the variables and assign them a value
+		console.log("It's working");
+		var adj = document.getElementById('adj').value;
+		var adv = document.getElementById('adv').value;
+		var nou = document.getElementById('nou').value;
+		var adj1 = document.getElementById('adj1').value;
+		var anml = document.getElementById('anml').value;
+		var nou1 = document.getElementById('nou1').value;
+		var ficrace = document.getElementById('ficrace').value;
+		var hday = document.getElementById('hday').value;
+		var vrb = document.getElementById('vrb').value;
+		var nou2 = document.getElementById('nou2').value;
+		var nou3 = document.getElementById('nou3').value;
+		var nou4 = document.getElementById('nou4').value;
+		var plc = document.getElementById('plc').value;
+		var vrb1 = document.getElementById('vrb1').value;
+		var pernam = document.getElementById('pernam').value;
+		var nou5 = document.getElementById('nou5').value;
+		var vrb2 = document.getElementById('vrb2').value;
+		var adv1 = document.getElementById('adv1').value;
+		var adj2 = document.getElementById('adj2').value;
+		var ficp = document.getElementById('ficp').value;
+		var nou6 = document.getElementById('nou6').value;
+		var adj3 = document.getElementById('adj3').value;
+		var vrb3 = document.getElementById('vrb3').value;
+		var vrb4 = document.getElementById('vrb4').value;
+		
+		
+		var vehicle = document.getElementById('vehicle').value;
+		
+		console.log(nou);
+		
+		
+		
+		
+		//concatenate together strings and variables to create a message
+		document.getElementById('output').innerHTML="<p>I’m going to tell you what it takes to become a multi <strong>"+adj+"</strong> species and why this is important. Fundamentally the future is <strong>"+adv+"</strong> more exciting and interesting if we are a <strong>"+nou+"</strong> civilization and a multi planet species then if we’re not it. There isn’t anything more <strong>"+adj1+"</strong> than going out there and being among the stars where no <strong>"+anml+"</strong> has ever been before, eventually <strong>"+nou1+"</strong> suggests there will be some doomsday event in the distant future so that’s why putting <strong>"+ficrace+"</strong> on a different planet for a back up plan just in case <strong>"+hday+"</strong> ever happened humanity’s future could be preserved. Why would you ever want to <strong>"+vrb+"</strong> to mars there’s plenty of other planets in our solar system, because our options for going anywhere else with the <strong>"+nou2+"</strong>and <strong>"+nou3+"</strong> we have available is limited.</p>"; 
+		
+		document.getElementById('output').innerHTML+="<p>Some other nearby options are Venus, but it has a super high pressure <strong>"+nou4+"</strong> atmosphere which is tricky with the limited technology we have. Mercury is also way too close to <strong>"+plc+"</strong> for anybody to be able to go on it but maybe we could <strong>"+vrb1+"</strong> on one of Jupiter’s moons but still that’s too far away for now and that leave us with mar as the best option for <strong>"+pernam+"</strong>. The way we would get to mars is by a normal <strong>"+nou5+"</strong> but what you would have to do is refuel that rocket in orbit has soon as it has <strong>"+vrb2+"</strong> from earth, without refueling in orbit you would have half order of magnitude impact <strong>"+adv1+"</strong> on the cost which would make the cost of a seat even more <strong>"+adj2+"</strong>. </p>";
+		
+		document.getElementById('output').innerHTML+="<p>When the space <strong>"+vehicle+"</strong> would arrive on <strong>"+ficp+"</strong> it is very important to set up habitats where people can be protected from <strong>"+nou6+"</strong> and be given oxygen, also we will have to make an <strong>"+adj3+"</strong> fuel source so that we can be able to send vessels back and forth at an efficient rate. Once humanity has our first colony set up, we will be able to start <strong>"+vrb3+"</strong> the planet to are liking and being able to <strong>"+vrb4+"</strong>, but this might not happen for at least 150 years . . ..</p>";
+		
+		document.getElementById('output').innerHTML+="<img src='congrats.jpg' alt='congrats.jpg'><br>";
+		
+		
+	}
+	
+	
+	</script>
+	</div>	
+	</div>
+	
+</body>
+</html>
