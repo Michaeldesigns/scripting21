@@ -1,0 +1,193 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+	
+	
+	
+<style>
+	
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	
+
+	body{
+		height: 100vh;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right bottom,#304285,#73B2FF,#4273E3,#556EFA,#4242E3,#4242E3) ;
+	}
+	
+	.time{
+		
+		color: #FFFFFF;
+		background: #283870;
+		font-family: 'Readex Pro', sans-serif;
+		width:300px;
+		padding:14px 11px;
+		border: 3px solid #37B0AC; 
+		border-radius: 3px;
+		justify-content: center;
+	}
+	.time:hover{
+		background:#0FABFF;
+		box-shadow: 0 0 30px #37B0AC;
+	}
+	
+	.hms{
+		font-size:35px;
+		font-weight: 600;
+		text-align: center;
+		letter-spacing: 6px;	
+	}
+	
+	
+	.ampm{
+		font-size:24px;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		letter-spacing: 3px;
+		background:#096596;
+		padding:0px;
+		margin:0px;
+		border-radius:4px;
+	font-weight: 600;
+		position:relative;
+	}
+	
+	
+	.date{
+		font-size:16pt;
+		font-weight: 300;
+		text-align: center;
+		letter-spacing: 3px;
+	}
+
+	.year{
+		font-size:16pt;
+		font-weight: 300;
+		text-align: center;
+		letter-spacing: 3px;
+		
+	}	
+	
+</style>	
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<div class="time">
+	
+        <!---for time--->
+		<div class="hms"></div>
+		<!---for am/pm--->
+		
+		
+		<div class="ampm"></div>
+		<!---date---->
+        <div class="date"></div>
+		<div class="year"></div>
+		
+	
+		
+	</div>
+	
+
+<script>
+    function updateTime(){
+		var dateInfo = new Date();
+		
+		/*time*/
+		var hr,
+          _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+          sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+		  year = (dateInfo.getFullYear() < 12) ? "0" + dateInfo.getFullYear() : dateInfo.getFullYear(),	
+          ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM"; 
+		
+		
+		
+	
+	if (dateInfo.getHours() == 0) {
+    hr = 12;
+  } else if (dateInfo.getHours() > 12) {
+    hr = dateInfo.getHours() - 12;
+  } else {
+    hr = dateInfo.getHours();
+  }
+		
+    
+		
+		
+		
+		
+		
+		
+		
+		//current time
+		
+  var currentTime = hr + ":" + _min + ":" + sec;
+		
+		document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+  
+		document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+	document.getElementsByClassName("year")[0].innerHTML= year;	
+		
+		
+		var dow = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    month = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+		day = dateInfo.getDate();
+		
+		var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + "" + day;
+		
+		document.getElementsByClassName("date")[0].innerHTML = currentDate;
+		
+		
+		
+	};	
+	
+	
+	updateTime();
+	setInterval(function(){
+		updateTime()
+	}, 1000);
+	
+	
+	
+</script>	
+	
+		
+</body>
+</html>
